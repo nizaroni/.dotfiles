@@ -1,0 +1,23 @@
+#!/usr/bin/env zsh
+
+config=install-config.txt
+pwd=`pwd`
+
+while read -r line; do
+	parts=(${(s/ -> /)line})
+	srcfile=$parts[1]
+	dstfile=$parts[2]
+
+	src=$pwd/$srcfile
+	destination=${dstfile//"~"/$HOME}
+
+	print Linking ./$srcfile to $dstfile
+	command="ln -sf $src $destination"
+
+	if [[ $1 = "--debug" ]]
+	then
+		print $command
+	else
+		eval $command
+	fi
+done < $config
