@@ -25,6 +25,11 @@ call plug#end()
 " === Mappings & Variables ===
 " ------------------------------------------------------------------------------
 
+" Use CTRL-L to clear search highlighting (from tpope/vim-sensible)
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+endif
+
 " Preserve bulk edit functionality with CTRL+C in Insert mode
 inoremap <C-c> <Esc>
 
