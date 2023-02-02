@@ -36,6 +36,9 @@ endif
 " Preserve bulk edit functionality with CTRL+C in Insert mode
 inoremap <C-c> <Esc>
 
+" Syntax highlight code snippets inside markdown files
+let g:markdown_fenced_languages = ['css', 'html', 'javascript', 'js=javascript']
+
 " Hide the file explorer banner
 let g:netrw_banner = 0
 " Use tree view in the file explorer
