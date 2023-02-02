@@ -5,6 +5,8 @@
 " Initialize vim-plug plugin system
 call plug#begin()
 
+" Sort keys & values inside brackets
+Plug 'christoomey/vim-sort-motion'
 " Fuzzy file finder
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
