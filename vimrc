@@ -19,7 +19,8 @@ Plug 'tpope/vim-surround'
 " Increment sequenced numbers with CTRL+A & CTRL+X
 Plug 'triglav/vim-visual-increment'
 
-" Use single quotes and run `:PlugInstall` to install new plugins
+" Use single quotes for Plug commands
+" Reload ~/.vimrc and run `:PlugInstall` to install new plugins
 call plug#end()
 
 
