@@ -20,6 +20,9 @@ Plug 'christoomey/vim-sort-motion'
 " Fuzzy file finder
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+" TypeScript and tsx syntax highlighting
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 " Automatically detect a file's indentation settings
 Plug 'tpope/vim-sleuth'
 " Increment dates & times with CTRL+A & CTRL+X
