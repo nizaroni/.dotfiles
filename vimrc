@@ -1,3 +1,13 @@
+" --------------------
+" === Autocommands ===
+" ------------------------------------------------------------------------------
+
+" Use % to match angular brackets
+augroup angles
+  autocmd!
+  autocmd FileType typescript,typescriptreact set matchpairs+=<:>
+augroup END
+
 " ---------------
 " === Plugins ===
 " ------------------------------------------------------------------------------
